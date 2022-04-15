@@ -11,6 +11,7 @@ function LargeCard({ img, title, description, buttonText }) {
                 src={img}
                 layout='fill'
                 objectFit='cover'
+                alt=''
             />
         </div>
         <div className='absolute top-32 left-12'>

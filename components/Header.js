@@ -19,6 +19,7 @@ function Header() {
                 layout='fill'
                 objectFit='contain'
                 objectPosition='left'
+                alt=''
             />
         </div>
         {/* Middle Div - Search Bar */}
