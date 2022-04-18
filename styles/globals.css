@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Creating own custom tailwing utility class (to use the sames styles for multiple elements - basically to avoid repetition) */
+@layer components {
+  .button {
+    @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg 
+    active:scale-95 active:bg-gray-100 transition transform duration-100 ease-out;
+  }
+}
+
+/* Now, go to App.js file & "import '../styles/globals.css'"*/
+
+/* 
 html,
 body {
   padding: 0;
@@ -16,4 +28,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
+} */
