@@ -1,7 +1,15 @@
 import React from 'react';
+import {
+    GlobeAltIcon,
+    MenuIcon,
+    UserCircleIcon,
+    UserIcon,
+    UsersIcon
+} from '@heroicons/react/solid';
 
 function Footer() {
   return (
+      <div className='bg-gray-100 text-gray-600'>
     <div className='grid grid-cols-1 md:grid-cols-4 gap-y-10 px-32 py-14 bg-gray-100 text-gray-600'>
         <div className='space-y-4 text-xs text-gray-800'>
             <h5 className='font-bold'>SUPPORT</h5>
@@ -35,6 +43,20 @@ function Footer() {
             <p>Investors</p>
             <p>AirBnb Luxe</p>
         </div>
+    </div>
+    <div className='border-t -mt-10 py-3 lg:py-5 text-gray-900'>
+        <div className='flex items-center space-x-3 lg:space-x-4 px-32 text-xs lg:text-sm'>
+            <p>© 2022 Airbnb.AS, Inc.</p>
+            <span>.</span>
+            <p>Privacy</p>
+            <span>.</span>
+            <p>Terms</p>
+            <span>.</span>
+            <p>Sitemap</p>
+            <span>.</span>
+            <p>Company details</p>
+        </div>
+    </div>
     </div>
   )
 }

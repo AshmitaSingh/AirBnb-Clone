@@ -24,7 +24,7 @@ function Search({searchResults}) {
   return (
     <div>
         <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`}/>
-        <main className='flex'>
+        <main className='flex overflow-scroll scrollbar-hide'>
             {/* Left side of the Page */}
             <section className='flex-grow pt-14 px-6'>
                 <p className='text-xs'>300+ Stays - <span className='bg-gray-200 rounded-lg px-2 py-1'>{range}</span> - for {noOfGuests} guests</p>

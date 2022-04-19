@@ -3,10 +3,11 @@ import Image from 'next/image'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import LargeCard from '../components/LargeCard'
+import ExtraLargeCard from '../components/ExtraLargeCard'
 import MediumCard from '../components/MediumCard'
 import SmallCard from '../components/SmallCard'
 import styles from '../styles/Home.module.css'
+import LargeCard from '../components/LargeCard'
 
 export default function Home({ exploreData, cardsData }) {
   return (
@@ -57,7 +58,24 @@ export default function Home({ exploreData, cardsData }) {
         </section>
 
         {/* Large Cards */}
-        <LargeCard
+        <section>
+          <h2 className='text-4xl font-semibold py-8'>Discover Airbnb Experiences</h2>
+          <div className='flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3'>
+            <LargeCard
+              img='/adv2.jpg'
+              title='Things to do on your trip'
+              buttonText='Experiences'
+            />
+            <LargeCard
+              img='/chore2.jpg'
+              title='Things to do from home'
+              buttonText='Online Experiences'
+            />
+          </div>
+        </section>
+        
+        {/* ExtraLarge Card */}
+        <ExtraLargeCard
           img='https://links.papareact.com/4cj'
           title='The Greatest Outdoors'
           description='Wishlists curated by AirBnb.'
