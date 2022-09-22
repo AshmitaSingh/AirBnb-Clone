@@ -67,7 +67,7 @@ export default Search;
 
 // Server-side Rendering
 export async function getServerSideProps() {
-    const searchResults = await fetch('https://links.papareact.com/isz').then(res => res.json());
+    const searchResults = await fetch('https://www.jsonkeeper.com/b/KSKT').then(res => res.json());
 
     return {
         props: {
@@ -75,3 +75,7 @@ export async function getServerSideProps() {
         }
     }
 }
+
+// https://jsonkeeper.com/b/GLEE
+// https://links.papareact.com/isz
+// https://jsonkeeper.com/b/KSKT

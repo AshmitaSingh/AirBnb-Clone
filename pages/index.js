@@ -91,12 +91,12 @@ export default function Home({ exploreData, cardsData }) {
 
 // Static Rendering (only for HomePage)
 export async function getStaticProps() {
-  const exploreData = await fetch('https://links.papareact.com/pyp').
+  const exploreData = await fetch('https://www.jsonkeeper.com/b/GLEE').
   then(
     (res) => res.json()
   );
 
-  const cardsData = await fetch('https://links.papareact.com/zp1').
+  const cardsData = await fetch('https://www.jsonkeeper.com/b/6ON8').
   then(
     (res) => res.json()
   );
@@ -113,3 +113,6 @@ export async function getStaticProps() {
 
 // Deployed!!!
 // https://air-bnb-clone-ab.vercel.app/
+// https://links.papareact.com/pyp
+// https://jsonkeeper.com/b/6ON8
+// https://links.papareact.com/zp1
